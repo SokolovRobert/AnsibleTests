@@ -1,7 +1,5 @@
 - name: Get IP
   hosts: all
   tasks:
-
-      - name: Get IP
-      command: sh ip int br
-      register: mymotd
+   - name: Get IP
+     command: sh ip int br
