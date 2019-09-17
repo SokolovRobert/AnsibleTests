@@ -8,7 +8,7 @@
     #
     - name: Gather facts (ops)
       ios_facts:
-      when: ansible_network_os == 'ios'
+
     ###
     # Demonstrate variables
     #
