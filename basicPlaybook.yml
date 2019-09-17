@@ -3,3 +3,8 @@
   tasks:
   - name: return network info
     shell: ip addr
+    register: result
+  - name: print network info
+    debug: 
+      var: result
+      verbosity: 2
