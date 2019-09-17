@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks:
+  - name: return network info
+    shell: ifconfig
