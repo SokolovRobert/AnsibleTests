@@ -6,4 +6,4 @@
       url: http://www.google.com
       return_content: yes
     register: this
-    failed_when: "'GOOGLE" not in this.content"
+    failed_when: "'GOOGLE' not in this.content"
