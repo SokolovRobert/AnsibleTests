@@ -1,7 +1,25 @@
 ---
 - hosts: all
   tasks:
-  - name: return network info
+  - name: 1) return network info
+    shell: ip addr
+    register: result
+  - name: print network info
+    debug: 
+      var: result.stdout
+  - name: 2) return network info
+    shell: ip addr
+    register: result
+  - name: print network info
+    debug: 
+      var: result.stdout
+  - name: 3) return network info
+    shell: ip addr
+    register: result
+  - name: print network info
+    debug: 
+      var: result.stdout
+  - name: 4) return network info
     shell: ip addr
     register: result
   - name: print network info
